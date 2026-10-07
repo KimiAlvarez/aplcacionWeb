@@ -1,0 +1,43 @@
+/* Reseteo básico para evitar espacios extra */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.contenedor {
+  display: grid;
+  /* Columna 1 de 300px para el menú, Columna 2 de 1fr para el resto */
+  grid-template-columns: 300px 1fr;
+  /* Fila 1: Header (80px), Fila 2: Main (espacio restante), Fila 3: Footer (65px) */
+  grid-template-rows: 80px 1fr 65px;
+  
+  /* Asegura que ocupe al menos toda la altura de la pantalla */
+  min-height: 100vh;
+  border: 10px solid blue;
+}
+
+/* El Menú ocupa la primera columna y abarca todas las filas de alto a alto */
+.menu {
+  grid-column: 1;
+  grid-row: 1 / -1; /* Desde la línea inicial 1 hasta la última línea (-1) */
+  background-color: blanchedalmond;
+}
+
+/* Elementos de la segunda columna */
+#header {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+#main {
+  grid-column: 2;
+  grid-row: 2; /* Ocupa automáticamente el espacio entre header y footer */
+  background-color: antiquewhite;
+}
+
+#footer {
+  grid-column: 2;
+  grid-row: 3;
+  background-color: aqua;
+}

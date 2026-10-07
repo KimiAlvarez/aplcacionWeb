@@ -1,0 +1,166 @@
+header {
+  background-color: rgb(152, 228, 203);
+  padding: 30px 20px 10px;    /* Espaciado interno superior, lateral e inferior */
+  text-align: center;          /* CENTRA el h1, el p y el nav */
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+
+header nav {
+  display: flex;
+  justify-content: center;     /* Centra los botones del menú */
+  gap: 12px;                  /* Espacio constante entre enlaces */
+  margin-bottom: 25px;        /* Separación entre el menú y el título h1 */
+  flex-wrap: wrap;            /* Adaptable para pantallas pequeñas */
+}
+
+
+header nav a{
+ background-color: #fdfbf7;   /* Tono beige claro suave */
+  color: #2c3e50;
+  padding: 10px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+
+
+}
+
+header nav a:hover {
+  background-color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12);
+}
+
+/* Estilos para el Título Principal */
+header h1 {
+  color: #1a202c;
+  font-size: 32px;
+  margin: 0 0 8px 0;          /* Quita márgenes excesivos */
+  font-weight: 700;
+}
+
+/* Estilos para el Subtítulo / Párrafo */
+header p {
+  color: #334155;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1.5px;      /* Espaciado fino entre letras */
+  margin: 0 0 20px 0;
+}
+
+/* Estilo estilizado para la línea separadora */
+header hr {
+  border: none;
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.1); /* Línea sutil en lugar del gris por defecto */
+  max-width: 90%;             /* Evita que toque los bordes laterales */
+  margin: 0 auto;
+}
+
+
+/* Centra el título y da espacio general */
+#principal {
+  text-align: center;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+}
+
+#principal h2 {
+  margin-bottom: 30px;
+}
+
+/* Alinea y centra los 4 recuadros en una fila */
+.contenedor-tarjetas {
+  display: flex;             /* Activa el diseño flexible en fila */
+  justify-content: center;   /* Centra los recuadros horizontalmente */
+  align-items: center;       /* Alinea los recuadros verticalmente */
+  gap: 15px;                 /* Espacio entre cada recuadro */
+  flex-wrap: wrap;           /* Si la pantalla es pequeña, se acomodan abajo */
+}
+
+/* Estilo exacto de las cajas cuadradas con borde */
+.tarjeta {
+  border: 1px solid #000000; /* Borde delgado como en la imagen */
+  padding: 15px 25px;        /* Espaciado interno para dar volumen a las cajas */
+  min-width: 110px;          /* Ancho mínimo uniforme para todas */
+  cursor: pointer;
+  background-color: transparent;
+}
+
+/* Quita márgenes por defecto del texto dentro del cuadro */
+.tarjeta h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+/* Estilos generales */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2; /* Fondo claro como en la imagen */
+}
+
+#principal {
+  text-align: center;
+  padding-top: 20px;
+}
+
+#principal h2 {
+  font-size: 16px;
+  font-weight: normal;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+}
+
+/* Alineación de los 3 recuadros centrados */
+.contenedor-tarjetas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+/* Estilo para las tarjetas superiores (Carrera, Docentes, Proyectos) */
+.tarjeta {
+  border: 1px solid #000000;
+  padding: 12px 20px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.tarjeta h3 {
+  margin: 0;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+/* Estilos para los bloques completos con bordes horizontales (CONTACTO y FOOTER) */
+.seccion-bloque {
+  width: 100%;
+  border-top: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+  padding: 25px 0;
+  text-align: center;
+  background-color: transparent;
+}
+
+/* Ajuste específico para evitar doble borde pegado entre contacto y footer */
+.seccion-bloque.footer {
+  border-top: none; /* Elimina la línea superior para no duplicarla con la de contacto */
+}
+
+.seccion-bloque h3, 
+.seccion-bloque p {
+  margin: 0;
+  font-size: 14px;
+  font-weight: normal;
+  letter-spacing: 1px;
+}
+

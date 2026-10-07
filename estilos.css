@@ -1,0 +1,30 @@
+body{
+ background-color: rgb(100, 15, 29) ; 
+   
+}
+
+
+.principal {
+    background-color: rgb(177, 56, 76);
+
+}
+
+#main{
+    width: 70%;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none; /* Opcional: quita el subrayado azul por defecto */
+}
+
+header h2{
+    color: white;
+}
+
+.principal h5 {
+    color: white;
+}
+
+
+
